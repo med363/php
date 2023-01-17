@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+</script>
+<body>
+    <?php  $carte="23456" ?>
+    <form action="exercice.php" method="post">
+        <fieldset>
+            <legend>Achat</legend>
+            <div class="option">
+                <label class="label1">Achat</label>  
+                <select name="myoption">
+                    <option value="">--choisit votre artice--</option>
+                    <option value="pull">pull</option>
+                    <option value="pantallon">pantallon</option>
+                    <option value="chaussures">chaussures</option>
+                </select>
+            </div>
+            <br/>
+            <br/>
+            <div>
+            <label class="label2">Quantite</label> 
+            <input type="number" name="qte" placeholder="Quantite ..."/>
+            </div> 
+            <div >
+                <fieldset>
+                    <legend>Coordonee</legend>
+                    <label class="label3">nom</label> 
+ <input type="text" name="nom" placeholder="nom"/><br/>
+ <label class="label4">prenom</label> 
+ <input type="text" name="prenom" placeholder="prenom"/><br/>
+ <label class="label5">Adress</label> 
+ <input type="text" name="adress" placeholder="exemple:raihan/sousse"/><br/>
+ <label class="label5">Telephone</label> 
+ <input type="text" name="tel" placeholder="55242133"/><br/>
+ <input type="hidden" name="cartevisa" value="<?php echo $carte?>"/>
+            </div>
+            <br/>
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Annuler" />
+
+
+        </fieldset>
+
+        
+    </form>
+    
+</body>
+</html>
